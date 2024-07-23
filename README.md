@@ -1,5 +1,7 @@
 # A Restaurant Landing Page UI
 
+<img src="bistro.gif" alt="Your GIF Demo" />
+
 ## Tech Stack
 
 **Client:** React.js
@@ -32,6 +34,3 @@ Start the server
   npm run start
 ```
 
-## Acknowledgements
-
-- [ IQONICDESIGN for th UI Design](https://ui8.net/iqonicdesign/products/gericht-restaurant-website-ui-in-figma)

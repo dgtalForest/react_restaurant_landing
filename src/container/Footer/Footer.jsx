@@ -1,8 +1,8 @@
-import React from 'react'
-import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi'
-import { images } from '../../constants'
-import './Footer.css'
-import { FooterOverlay, Newsletter } from '../../components'
+import React from 'react';
+import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi';
+import { images } from '../../constants';
+import './Footer.css';
+import { FooterOverlay, Newsletter } from '../../components';
 const Footer = () => (
   <div className="app__footer section__padding " id="login">
     <FooterOverlay />
@@ -17,7 +17,7 @@ const Footer = () => (
       </div>
 
       <div className="app__footer-links_logo">
-        <img src={images.gericht} alt="logo" />
+        <img src={images.bistro} alt="logo" />
 
         <div className="app__footer-links_icons">
           <FiFacebook />
@@ -39,9 +39,9 @@ const Footer = () => (
       </div>
     </div>
     <div className="footer__copyright">
-      <p className="p__opensans">2022 Gericht. All rights reserved.</p>
+      <p className="p__opensans">2024 Bistro. All rights reserved.</p>
     </div>
   </div>
-)
+);
 
-export default Footer
+export default Footer;

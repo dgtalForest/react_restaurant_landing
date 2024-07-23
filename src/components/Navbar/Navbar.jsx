@@ -27,9 +27,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="app__navbar sticky">
+    <nav className={`app__navbar ${isSticky ? 'sticky' : ''}`}>
       <div className="app__navbar-logo">
-        <img src={images.gericht} alt="app__logo" />
+        <img src={images.bistro} alt="app__logo" />
       </div>
       <ul className="app__navbar-links">
         <li className="p__opensans">
