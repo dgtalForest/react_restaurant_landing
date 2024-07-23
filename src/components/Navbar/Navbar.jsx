@@ -1,16 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
-import './Navbar.css'
-import { GiHamburgerMenu } from 'react-icons/gi'
-import { MdOutlineRestaurantMenu } from 'react-icons/md'
-import images from '../../constants/images'
-import './Navbar.css'
+import './Navbar.css';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { MdOutlineRestaurantMenu } from 'react-icons/md';
+import images from '../../constants/images';
+import './Navbar.css';
 
 const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = React.useState(false)
+  const [toggleMenu, setToggleMenu] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="app__navbar">
+    <nav className="app__navbar sticky">
       <div className="app__navbar-logo">
         <img src={images.gericht} alt="app__logo" />
       </div>
@@ -77,6 +94,6 @@ const Navbar = () => {
         )}
       </div>
     </nav>
-  )
-}
-export default Navbar
+  );
+};
+export default Navbar;
