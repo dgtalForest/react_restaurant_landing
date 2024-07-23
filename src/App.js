@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import {
   AboutUs,
@@ -9,10 +9,10 @@ import {
   Header,
   Intro,
   Laurels,
-  SpecialMenu,
-} from './container'
-import { Navbar } from './components'
-import './App.css'
+  SpecialMenu
+} from './container';
+import { Navbar, ScrollToTopButton } from './components';
+import './App.css';
 
 const App = () => (
   <div>
@@ -26,7 +26,8 @@ const App = () => (
     <Gallery />
     <FindUs />
     <Footer />
+    <ScrollToTopButton />
   </div>
-)
+);
 
-export default App
+export default App;

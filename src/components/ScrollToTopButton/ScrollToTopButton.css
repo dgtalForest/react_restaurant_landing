@@ -1,0 +1,28 @@
+/* ScrollToTopButton.css */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.5); /* Outer shadow and glow */
+  opacity: 0.8;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  opacity: 1;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 255, 255, 0.7); /* Enhanced shadow on hover */
+}
+
+.scroll-to-top svg {
+  fill: currentColor; /* Ensures the icon color matches the button text color */
+}
