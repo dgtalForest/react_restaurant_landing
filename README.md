@@ -1,13 +1,4 @@
-
-# 
-
-A restaurant UI converted into react.js
-
-
-## Figma Design
-
-[Figma file](https://www.figma.com/file/yvClSI9AZBRX8UaaGEByF3/Modern-UI%2FUX%3A-Gericht?node-id=53%3A2)
-
+# A Restaurant Landing Page UI
 
 ## Tech Stack
 
@@ -15,19 +6,18 @@ A restaurant UI converted into react.js
 
 **Server:** No Backend!!
 
-
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/co-bby/Restaurant-UI
+  git clone https://github.com/dgtalforest/react_restaurant_landing
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd react_restaurant_landing
 ```
 
 Install dependencies
@@ -42,19 +32,6 @@ Start the server
   npm run start
 ```
 
-
-## Lessons Learned
-
-- React functional components and their reusability
-- React file and folder structure
-
-- Fundamentals of the CSS BEM Model
-- From soft and pleasant animations to complex gradients
-- Perfectly placed media queries for satisfactory responsiveness covering almost all devices
-
-
 ## Acknowledgements
 
- - [ IQONICDESIGN for th UI Design](https://ui8.net/iqonicdesign/products/gericht-restaurant-website-ui-in-figma)
- 
-
+- [ IQONICDESIGN for th UI Design](https://ui8.net/iqonicdesign/products/gericht-restaurant-website-ui-in-figma)
