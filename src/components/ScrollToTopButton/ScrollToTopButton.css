@@ -16,6 +16,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.5); /* Outer shadow and glow */
   opacity: 0.8;
   transition: opacity 0.3s ease, box-shadow 0.3s ease;
+  z-index: 9999;
 }
 
 .scroll-to-top:hover {
