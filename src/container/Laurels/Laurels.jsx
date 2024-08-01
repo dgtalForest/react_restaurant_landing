@@ -1,8 +1,8 @@
-import React from 'react'
-import { SubHeading } from '../../components'
-import { images, data } from '../../constants'
+import React from 'react';
+import { SubHeading } from '../../components';
+import { images, data } from '../../constants';
 
-import './Laurels.css'
+import './Laurels.css';
 
 const Laurels = () => (
   <div className="app__bg app__wrapper section__padding">
@@ -10,8 +10,8 @@ const Laurels = () => (
       <SubHeading title="Award and Recognition" />
       <h1 className="headtext__cormorant">Our Laurels</h1>
       <div className="app__laurels_awards">
-        {data.awards.map((award) => (
-          <div className="app__laurels_awards-card">
+        {data.awards.map((award, index) => (
+          <div key={index} className="app__laurels_awards-card">
             <img src={award.imgUrl} alt="award" />
             <div className="app__laurels_awrds-card_content">
               <p className="p__cormorant" style={{ color: '#DCCA87' }}>
@@ -27,6 +27,6 @@ const Laurels = () => (
       <img src={images.laurels} alt="laurels" />
     </div>
   </div>
-)
+);
 
-export default Laurels
+export default Laurels;

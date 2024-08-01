@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-import './Newsletter.css'
+import './Newsletter.css';
+import SubHeading from '../SubHeading/SubHeading';
 
 const Newsletter = () => (
   <div className="app__newsletter">
     <div className="app__newsletter-heading">
-      <subHeading title="Newsletter" />
+      <SubHeading title="Newsletter" />
       <h1 className="headtext__cormorant">subscribe to our newsletter</h1>
       <p className="p__opensans">And never miss</p>
     </div>
@@ -15,6 +16,6 @@ const Newsletter = () => (
       <button className="custom__button">subscribe</button>
     </div>
   </div>
-)
+);
 
-export default Newsletter
+export default Newsletter;
