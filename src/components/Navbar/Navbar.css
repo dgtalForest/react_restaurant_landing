@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   background: var(--color-black);
-
+  z-index: 9999 !important;
   padding: 1rem 2rem;
   transition: background-color 0.5s, padding 1s;
 }
