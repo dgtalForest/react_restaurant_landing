@@ -1,19 +1,19 @@
-import React from 'react'
+import React from 'react';
 
-import './Intro.css'
-import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs'
-import { meal } from '../../constants'
+import './Intro.css';
+import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs';
+import { meal } from '../../constants';
 const Intro = () => {
-  const [playVideo, setPlayVideo] = React.useState(false)
-  const vidRef = React.useRef()
+  const [playVideo, setPlayVideo] = React.useState(false);
+  const vidRef = React.useRef();
   const handleVideo = () => {
-    setPlayVideo((prevPlayVideo) => !prevPlayVideo)
+    setPlayVideo((prevPlayVideo) => !prevPlayVideo);
     if (playVideo) {
-      vidRef.current.pause()
+      vidRef.current.pause();
     } else {
-      vidRef.current.play()
+      vidRef.current.play();
     }
-  }
+  };
 
   return (
     <div className="app__video">
@@ -22,7 +22,7 @@ const Intro = () => {
         ref={vidRef}
         type="video/mp4"
         loop
-        control={false}
+        controls={false}
         muted
       />
       <div className="app__video-overlay flex__center">
@@ -38,7 +38,7 @@ const Intro = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Intro
+export default Intro;
